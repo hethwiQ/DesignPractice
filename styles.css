@@ -1,0 +1,585 @@
+.comment {
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    font-family: agra;
+}
+.nameplate{
+    padding: 0.5%;
+    margin: 0%;
+    font-family: pp;
+    color: #c0c0c0;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+}
+.text{
+    font-family: pp;
+    color: #c0c0c0;
+    font-size: 11.5vw;
+    line-height: 12vw;
+}
+
+
+
+
+/*Fonts Import*/
+
+@font-face {
+    font-family: Mabry;
+    src: url(fonts/MabryPro/MabryPro-Black.ttf);
+}
+
+@font-face {
+    font-family: MabryLight;
+    src: url(fonts/MabryPro/MabryPro-Light.ttf);
+}
+
+@font-face {
+    font-family: Morg;
+    src: url(fonts/Morganite/Morganite-Black.ttf);
+}
+
+@font-face {
+    font-family: Agra;
+    src: url(fonts/Agrandir/Agrandir-TextBold.otf);
+}
+
+@font-face {
+    font-family: AgraReg;
+    src: url(fonts/Agrandir/Agrandir-Regular.otf);
+}
+
+@font-face {
+    font-family: GroteskRegular;
+    src: url(fonts/AndersonGrotesk/AndersonGroteskRegular/AndersonGrotesk.otf);
+}
+
+@font-face {
+    font-family: AeonikRegular;
+    src: url(fonts/AeonikRegular/Aeonik-Pro-Regular.ttf);
+}
+
+@font-face {
+    font-family: PP;
+    src: url(fonts/pp-neue-montreal/ppneuemontreal-medium.otf);
+}
+
+/*
+=================
+Page CSS here
+=================
+*/
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #151515;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    padding: 0%;
+    margin: 0%;
+    background-color: transparent;
+}
+
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    padding: 0%;
+}
+
+/*
+=================
+Brutalism stats here
+=================
+*/
+.content-left {
+    height: 100%;
+    width: 79.5%;
+    float: left;
+}
+
+.content-right {
+    height: 100%;
+    width: 20%;
+    float: right;
+}
+
+.content-up {
+    height: 40%;
+
+}
+
+.content-down {
+    height: 60%;
+
+}
+
+.marquee {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Morg;
+    font-size: 100px;
+    margin-top: 0;
+    padding-top: 0;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    animation: marquee 12s linear infinite;
+    -webkit-animation: marquee 12s linear infinite;
+    -webkit-marquee-speed: fast;
+}
+
+.marquee-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 70%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    grid-column-gap: 1rem;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 1rem));
+    }
+}
+
+.scroll {
+    animation: scroll 10s linear infinite;
+}
+
+
+.custom-button {
+    position: relative;
+    font-family: 'Agra', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-weight: 500;
+    color: black;
+    background-color: #8d0e0e69;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #000;
+
+}
+
+.custom-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.custom-button::after {
+    background-color: #8d0e0e69;
+}
+
+.custom-button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    box-shadow: 3px 3px 0px #000;
+}
+
+header {
+    height: 200px;
+    background-color: #000;
+}
+
+/*
+=================
+Brutalism ends here
+=================
+*/
+
+/*
+==================
+Minimalism stats here
+==================
+*/
+
+.custom-button-min {
+    position: relative;
+    font-family: 'GroteskRegular', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    transition: all .2s;
+    border: none;
+    font-weight: 500;
+    color: #1F1F1D;
+    background-color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+
+}
+
+.custom-button-min:hover {
+    transform: translateY(-3px);
+    color: blue;
+}
+
+/*
+==================
+Minimalism end here
+==================
+*/
+
+/*
+===========================
+Aurora gradient stats here
+===========================
+*/
+.gradient {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    font-size: 40px;
+    font-family: Arial,
+        Helvetica, sans-serif;
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.custom-button-aurora {
+    padding: 13px 25px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    font-family: AeonikRegular;
+}
+
+.custom-button-aurora {
+    background: linear-gradient(to right, #ff6b08, #f32170,
+            #cf23cf);
+    background-repeat: no-repeat;
+}
+
+.custom-button-aurora:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px rgb(143, 143, 143),
+        0 0 25px rgb(143, 143, 143),
+        0 0 50px rgb(143, 143, 143),
+        0 0 100px rgb(143, 143, 143);
+}
+
+.custom-button-aurora2 {
+    padding: 20px 40px;
+    font-size: 17px;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    border: none;
+    font-family: AeonikRegular;
+}
+
+.custom-button-aurora2:hover {
+    transform: translateY(-3px);
+    color: #cf23cf;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: AeonikRegular;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: none;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+/*
+========================
+Aurora gradient end here
+========================
+*/
+.rain {
+    color: inherit;
+    text-decoration: none;
+}
+
+.rain {
+    background:
+        linear-gradient(to right,
+            rgba(100, 200, 200, 0),
+            rgba(100, 200, 200, 0)),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.rain:hover {
+    background-size: 0 3px, 100% 3px;
+}
+/*
+.bn, .bn::after, .bn::before, .bn:hover::before, .bn:active:after, .bn:active {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bn {
+  border: none;
+  outline: none;
+  z-index: 0;
+  --border-radius: 25px;
+    --border-width: 0px;
+    appearance: none;
+    position: relative;
+    border: 0;
+    background-color: transparent;
+    font-size: 11.5vw;
+    z-index: 2;
+    border-radius: 100px;
+    border-width: 0cap;
+}
+
+.bn::after {
+  content: "";
+  z-index: -1;
+  --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    background-image: conic-gradient(
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080
+      );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue634 linear 500ms infinite;
+    animation-play-state: paused;
+    border-color: #000;
+    border-radius: 80px;
+    border-width: 0cap;
+}
+
+.bn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #07d888, #e40851, #2f00ff, #00ff37,
+      #ec0808, #2600ff, #0bd157, #2f00ff
+);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing345 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  opacity: 0;
+  border-radius: 80px;
+  border-width: 0cap;
+}
+
+@keyframes glowing345 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn:hover::before {
+  opacity: 1;
+  border-radius: 80px;
+  border-width: 0cap;
+}
+
+.bn:active:after {
+  background: transparent;
+  animation-play-state: running;
+    border-radius: 80px;
+    border-width: 0cap;
+}
+@keyframes rotate-hue634 {
+    to {
+      filter: hue-rotate(1turn);
+    }
+  }
+
+.bn:active {
+  color: #000;
+  --border-width: 5px;
+  border-radius: 80px;
+  border-width: 0cap;
+}
+*/

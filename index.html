@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById("time");
+            const now = new Date();
+            const hours = now.getHours() % 12 || 12; // Convert 24-hour time to 12-hour format
+            const minutes = now.getMinutes();
+            const ampm = now.getHours() < 12 ? "AM" : "PM";
+
+            const formattedTime = `${hours}:${(minutes < 10 ? '0' : '')}${minutes} ${ampm}`;
+            timeElement.textContent = formattedTime;
+        }
+
+        // Update the time every second
+        setInterval(updateTime, 1000);
+
+        // Initialize the time when the page loads
+        window.addEventListener("load", updateTime);
+    </script>
+</head>
+
+<body data-scroll-time="2.0">
+    <div class="container">
+        <section>
+
+            <div class="page">
+                <div style="height: 40px; padding-bottom: 10px; margin: 0%; border-bottom: #c0c0c0 2px solid;">
+                    <div
+                        style="padding: 0px;float: left; height: 40px;width: 40px; background-color: transparent;font-family: pp; color: #c0c0c0; padding-top: 15px; padding-left: 100px;">
+                        <img style="width: 20px;" src="assets/icons/globe.svg"></div>
+                    <div
+                        style="padding:0px;float: right; height: 40px;width: 90%; background-color: transparent;font-family: pp; color: #c0c0c0;">
+                        <p id="time"></p>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text">The <span class="rain">Design</span>
+                        Practice of Hethwik
+                        Reddy K</h1>
+                </div>
+            </div>
+        </section>
+        <section style="background: linear-gradient( #151515, #151515,#151515,rgba(39, 0, 0, 0.378),
+        #6a040499); background-repeat: no-repeat;">
+            <div style="font-family: pp; color: #c0c0c0;">
+                <h1 style="font-size: 50px;">Here, I am showcasing some of my work in different fields of design</h1>
+                <p style="text-align: center; color: #c0c0c089;">*(This page is not made for mobile phones! only for
+                    desktops)</p>
+            </div>
+        </section>
+        <section style="background-color: #6a040499;">
+            <div class="page"
+                style="background-color: #f50808; border-top-left-radius:50px; border-top-right-radius: 50px;">
+                <div class="content-up">
+                    <div class="content-left">
+                        <a target="_blank" style="text-decoration: none; color: inherit;"
+                            href="https://bootcamp.uxdesign.cc/the-neubrutalism-or-neo-brutalism-ui-design-trend-641714825fed"
+                            title="You will be redirected!">
+                            <div class="marquee" style="font-family: Marby; font-size: 150px; align-items: center;">
+                                <div class="marquee-content scroll">
+                                    <div class="text-block" style="padding-right: 10px;">&bull;
+                                        <span style="font-family: mabry;">
+                                            THIS IS NEUBRUTALISM
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="marquee-content scroll">
+                                    <div class="text-block" style="padding-right: 10px;">&bull;
+                                        <span style="font-family: mabry;">
+                                            THIS IS NEUBRUTALISM
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div style="padding-left: 20px;">
+                            <a href="https://gumroad.com/" target="_blank" title="you will be redirected">
+                                <button class="custom-button">+ Example 1</button></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.wearewunderbar.nl/" target="_blank" title="you will be redirected">
+                                <button class="custom-button">+ Example 2</button></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.hybridstateofmind.com/" target="_blank" title="you will be redirected">
+                                <button class="custom-button">+ Example 3</button></a>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div style="background-color: transparent;">
+                            <img width="220" src="assets/icons/down-right.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-down" style="border-top: #181819 2px solid;">
+                    <h1 style="font-family: mabry; font-size: 60px; padding-left: 20px;">What is NeuBrutalism?</h1>
+                    <div style="background-color: transparent; width: 70%; padding-left: 40px;">
+                        <p style=" font-size: 30px; font-family: AgraReg;">
+                            <span style="font-size: 32px; text-decoration: underline;">NeuBrutalism</span> stand's out
+                            as something distinct
+                            and unconventional when contrasted with the prevalent flat designs of today.
+                            The stark contrast between contemporary design and the aesthetics of the
+                            pre-2000s era is especially noticeable to younger generations who didn't
+                            experience the design sensibilities of that earlier period. This creates an
+                            interesting foundation for the emergence of a new trend.
+                        </p>
+                    </div>
+                </div>
+        </section>
+        <section style="background-color: #6a040499;">
+            <div class="page"
+                style="background-color: #f50808; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;">
+                <h1 style="font-family: Mabry; padding-left: 20px; font-size: 50px;">&nbsp;Key Characteristics:</h1>
+                <div style="background-color: transparent; font-family: agrareg; font-size: 30px; padding-left: 30px;">
+                    <ul>
+                        <li>Unusual background color theme</li>
+                        <li>Lack of gradients</li>
+                        <li>Bold modern and futuristic typography</li>
+                        <li>Static animations</li>
+                        <li>Basic shapes</li>
+                        <li>Hard contrasts</li>
+                        <li>Dark outlines</li>
+                        <li>Hard shadows (45 degree shadows that are the same color and opacity as the outline)</li>
+                        <li>Random and inconsistent layout</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section style="background: linear-gradient( #6a040499, rgba(39, 0, 0, 0.378),#15151500,rgba(218, 218, 218, 0.037),
+        #dadada30); background-repeat: no-repeat;">
+            <div class="comment">BREAK</div>
+        </section>
+        <section style="background-color: #dadada30;">
+            <div class="page"
+                style="background-color: #dadada; border-top-left-radius:50px; border-top-right-radius: 50px;">
+                <div style="height: 50%;">
+                </div>
+                <div>
+                    <h1
+                        style="height: 50%;font-family: GroteskRegular; font-size: 160px; margin: 0%; padding-left: 20px; color: #1F1F1D;">
+                        This is Minimalism &bull;</h1>
+                    <div
+                        style="height: 10%; width: 90%; border-top: 3px solid #1f1f1d75; margin: 0; padding-left: 20px; padding-top: 0%; padding-bottom: 0%; margin-bottom: 0; background-color: transparent;">
+                        <p style="font-family: GroteskRegular; font-size: 50px; color: #1f1f1d9f; padding-left: 20px;">
+                            Simple Design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="page" style="background-color: #dadada;">
+                <div>
+                    <a href="https://www.studioyoke.co.uk/" target="_blank" title="you will be redirected">
+                        <button class="custom-button-min">Example 1<img style="vertical-align: middle;" width="50px"
+                                src="assets/icons/down-right.svg"></button></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://nothing.tech/" target="_blank" title="you will be redirected">
+                        <button class="custom-button-min">Example 2<img style="vertical-align: middle;" width="50px"
+                                src="assets/icons/down-right.svg"></button></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.calebraney.com/" target="_blank" title="you will be redirected">
+                        <button class="custom-button-min">Example 3<img style="vertical-align: middle;" width="50px"
+                                src="assets/icons/down-right.svg"></button></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div style="height: px;">
+                    <h1
+                        style="padding-right:400px ; font-family: GroteskRegular; font-size: 65px; text-align: center; color: #1F1F1D;">
+                        What is Minimalism?</h1>
+                    <div style="text-align: right; padding-right: 200px; padding-left: 30%;">
+                        <p style="font-size: 40px; font-family: GroteskRegular; color: #1f1f1dd4;">
+                            <span style="font-size: 45px; text-decoration: underline;">Minimalism,</span>
+                            the art of
+                            less, is a popular modern design
+                            approach.
+                            Experimenting with colors, transitions,
+                            navigation, broken composition,
+                            or even the complete removal of all
+                            elements — there are more ways to
+                            implement minimalism
+                            than you can imagine.
+                        </p>
+                    </div>
+                </div>
+        </section>
+        <section style="background-color: #dadada30;">
+            <div class="page"
+                style="background-color: #dadada; border-bottom-left-radius:50px; border-bottom-right-radius: 50px;">
+                <h1
+                    style="padding-right:200px ; font-family: GroteskRegular; font-size:55px; text-align: center; color: #1F1F1D; ">
+                    The main principles of minimalism in web design:</h1>
+                <div
+                    style="background-color: transparent; font-family: GroteskRegular; font-size: 45px; color: #1f1f1dd4; padding-left: 300px;">
+                    <ul>
+                        <li>User-friendly interface</li>
+                        <li>Hidden navigation</li>
+                        <li>No more than three colors at once</li>
+                        <li>Lots of empty space</li>
+                        <li>Experimentation with fonts</li>
+                        <li>Mono-chrome color palette</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section style="background: linear-gradient( #dadada30, rgba(218, 218, 218, 0.037),#15151500,rgba(218, 218, 218, 0.037),
+        #dadada30); background-repeat: no-repeat;">
+            <div class="comment">BREAK</div>
+        </section>
+        <section>
+            <div class="page"
+                style="background-color: #fcfcfd; border-top-left-radius: 30px; border-top-right-radius: 30px;">
+                <div style=" width: 100%; text-align: center; padding-top: 200px;"><a target="_blank"
+                        href="https://dev.to/albertwalicki/aurora-ui-how-to-create-with-css-4b6g"
+                        style="text-decoration: none;">
+                        <h1
+                            style="font-size: 120px; font-family: AeonikRegular; padding: 0%; margin: 0%; color: #181819;">
+                            This is Aurora</h1>
+                        <h1
+                            style="top: 40%; left: 40%; font-size: 160px; background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);-webkit-text-fill-color: transparent; -webkit-background-clip: text; font-family: AeonikRegular; padding: 0%; margin: 0%;">
+                            Gradient.</h1>
+                    </a>
+                </div>
+                <div style="color: #525252; text-align: center;">
+                    <h3 style="font-family: AeonikRegular; padding: 0%; margin: 0%;">
+                        <span style="text-decoration: underline;">Aurora gradients</span> go well with most other modern
+                        website design trends,
+                    </h3>
+                    <h3
+                        style="font-family: AeonikRegular; padding: 0%; margin: 0%; text-align: center; align-self: center;">
+                        like Glassmorphism and Minimalistic design layouts.</h3>
+                </div>
+                <div style="padding: 40px; align-items: center; text-align: center;">
+                    <button class="custom-button-aurora" style="vertical-align: middle;">
+                        Dummy button<img
+                            style="width: 30px; padding-bottom: 3px; vertical-align: middle; padding-left: 3px;"
+                            src="assets/icons/arro.svg">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="page"
+                style="background-color: #fcfcfd; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+                <div>
+                    <div style="padding-top: 20px; text-align: center;">
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Example 1</span>
+                        </button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Example 2</span>
+                        </button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Example 3</span>
+                        </button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <h1
+                        style="padding-top: 50px ;font-family: AeonikRegular; font-size:50px; text-align: center; color: #1F1F1D;">
+                        Key Characteristics:</h1>
+                    <div
+                        style="background-color: transparent; font-family: AeonikRegular; font-size: 35px; color: #1f1f1dd4; text-align: left; padding-left: 40%;">
+                        <ul>
+                            <li>Gradient Color Schemes</li>
+                            <li>Soft and Ethereal</li>
+                            <li>Transitions and Motion</li>
+                            <li>Minimalistic and Clean</li>
+                            <li>Typography</li>
+                            <li>Responsive Design</li>
+                            <li>Subtle Interactions</li>
+                            <li>Engaging User Experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background: linear-gradient( #dadada30, rgba(218, 218, 218, 0.037),#15151500,rgba(218, 218, 218, 0),
+        #dadada00); background-repeat: no-repeat;">
+            <div class="comment">BREAK</div>
+        </section>
+    </div>
+</body>
+
+</html>
