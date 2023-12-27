@@ -27,22 +27,22 @@
 
 @font-face {
     font-family: Mabry;
-    src: url(fonts/MabryPro/MabryPro-Black.ttf);
+    src: url(/fonts/MabryPro/MabryPro-Black.ttf);
 }
 
 @font-face {
     font-family: MabryLight;
-    src: url(fonts/MabryPro/MabryPro-Light.ttf);
+    src: url(/fonts/MabryPro/MabryPro-Light.ttf);
 }
 
 @font-face {
     font-family: Morg;
-    src: url(fonts/Morganite/Morganite-Black.ttf);
+    src: url(/fonts/Morganite/Morganite-Black.ttf);
 }
 
 @font-face {
     font-family: Agra;
-    src: url(fonts/Agrandir/Agrandir-TextBold.otf);
+    src: url(/fonts/Agrandir/Agrandir-TextBold.otf);
 }
 
 @font-face {
@@ -52,17 +52,17 @@
 
 @font-face {
     font-family: GroteskRegular;
-    src: url(fonts/AndersonGrotesk/AndersonGroteskRegular/AndersonGrotesk.otf);
+    src: url(/fonts/AndersonGrotesk/AndersonGroteskRegular/AndersonGrotesk.otf);
 }
 
 @font-face {
     font-family: AeonikRegular;
-    src: url(fonts/AeonikRegular/Aeonik-Pro-Regular.ttf);
+    src: url(/fonts/AeonikRegular/Aeonik-Pro-Regular.ttf);
 }
 
 @font-face {
     font-family: PP;
-    src: url(fonts/pp-neue-montreal/ppneuemontreal-medium.otf);
+    src: url(/fonts/pp-neue-montreal/ppneuemontreal-medium.otf);
 }
 
 /*
